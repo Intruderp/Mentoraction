@@ -1,0 +1,32 @@
+header#header.fixed-top.d-flex.align-items-center
+  .container.d-flex.align-items-center
+    .logo.me-auto
+      h1
+        a(href="/") 
+          img(src='/img/favicon.png' alt='Mentoraction logo') 
+          |      Mentoraction
+    nav#navbar.navbar.order-last.order-lg-0
+      ul
+        if !user
+          li
+            a.nav-link.scrollto(href="/") Home
+        li
+          a.nav-link.scrollto(href="/mentors") Find Mentors
+        li 
+          a.nav-link.scrollto(href="/recentChats") Chats
+        li 
+          a.nav-link.scrollto(href="/blogs") Blog
+        if user
+          li
+            a.nav-link.logout.scrollto Log out
+          li
+            a.nav-link.nav__el(href='/me')
+              img.nav__user-img(src=`/img/users/${user.photo}` alt=`${user.firstName}`)
+          li 
+            a.nav-link.scrollto= user.firstName
+        else
+          li
+            a.nav-link.scrollto(href="/login") Login
+          li
+            a.nav-link.scrollto(href="/signup") Signup
+      i.bi.bi-list.mobile-nav-toggle

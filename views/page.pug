@@ -1,0 +1,131 @@
+extends base
+block content
+  //  ======= Hero Section ======= 
+  section#hero.d-flex.flex-column.justify-content-center.align-items-center
+    .container.text-center.text-md-left(data-aos="fade-up")
+      h1
+        | Welcome to 
+        span Mentoraction
+      h2 Don’t know how to do and what to do in your college life, don’t worry and log on to Mentoraction.
+      a.btn-get-started.scrollto(href="/signup") Get Started
+  //  End Hero 
+  main#main
+    //  ======= What We Do Section ======= 
+    section#what-we-do.what-we-do
+      .container
+        .section-title
+          h2 What We Do
+          p Platform for college students to interact with mentors.
+        .row
+          .col-lg-4.col-md-6.d-flex.align-items-stretch
+            .icon-box
+              .icon
+                i.bx.bxl-dribbble
+              h4
+                a(href) Find a Mentor
+              p Explore our various experience mentors and find the best fit for you.
+          .col-lg-4.col-md-6.d-flex.align-items-stretch.mt-4.mt-md-0
+            .icon-box
+              .icon
+                i.bx.bx-file
+              h4
+                a(href) Apply for Mentorship
+              p Create your Profile and show your interests and chose a mentor.
+          .col-lg-4.col-md-6.d-flex.align-items-stretch.mt-4.mt-lg-0
+            .icon-box
+              .icon
+                i.bx.bx-tachometer
+              h4
+                a(href) Increase your Potential 
+              p Chat with the mentors of various industries and get the correct guidance to succeede in life.
+    //  End What We Do Section 
+    //  ======= About Section ======= 
+    section#about.about
+      .container
+        .row
+          .col-lg-6
+            img.img-fluid(src="/img/about.jpg", alt)
+          .col-lg-6.pt-4.pt-lg-0
+            h3 About Us
+            p.
+              
+              “Mentoraction” acts as a bridge between mentors and the students. The bridge we have built to cover the gap between them. It is a platform in which students have the opportunity to connect with mentors from different backgrounds, with different work/ education experience. In this, both the students and the mentors can see each other's profile/resume.
+            .row.icon-boxes
+              .col-md-6
+                i.bx.bx-receipt
+                h4 Interact with Mentors
+                p In this, both the students and the mentors can see each other's profile/resume. On the basis of the profile of the mentors students can interact with them.
+              .col-md-6.mt-4.mt-md-0
+                i.bx.bx-cube-alt
+                h4 Professional Support
+                p Get the right guidance from the higly professional mentors.
+    //  End About Section 
+
+    //  ======= Counts Section ======= 
+    section#counts.counts.mt-5
+      .container
+        .row
+          .col-lg-3.col-6
+            .count-box
+              i.bi.bi-emoji-smile
+              span.purecounter(data-purecounter-start="0", data-purecounter-end="232", data-purecounter-duration="1")
+              p Happy Students
+          .col-lg-3.col-6
+            .count-box
+              i.bi.bi-journal-richtext
+              span.purecounter(data-purecounter-start="0", data-purecounter-end="521", data-purecounter-duration="1")
+              p Projects
+          .col-lg-3.col-6.mt-5.mt-lg-0
+            .count-box
+              i.bi.bi-headset
+              span.purecounter(data-purecounter-start="0", data-purecounter-end="1463", data-purecounter-duration="1")
+              p Hours Of Support
+          .col-lg-3.col-6.mt-5.mt-lg-0
+            .count-box
+              i.bi.bi-people
+              span.purecounter(data-purecounter-start="0", data-purecounter-end="15", data-purecounter-duration="1")
+              p Students
+    //  End Counts Section 
+    //  ======= Services Section ======= 
+    section#services.services.section-bg
+      .container
+        .section-title
+          h2 Services
+        .row
+          .col-md-6
+            .icon-box
+              i.bi.bi-briefcase
+              h4
+                a(href="#") Right Guidance
+              p Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+          .col-md-6.mt-4.mt-lg-0
+            .icon-box
+              i.bi.bi-card-checklist
+              h4
+                a(href="#") Choose a Mentor
+              p Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata
+          .col-md-6.mt-4
+            .icon-box
+              i.bi.bi-bar-chart
+              h4
+                a(href="#") Become A Mentor?
+              p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+          .col-md-6.mt-4
+            .icon-box
+              i.bi.bi-binoculars
+              h4
+                a(href="#") Chat-Support
+              p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          .col-md-6.mt-4
+            .icon-box
+              i.bi.bi-brightness-high
+              h4
+                a(href="#") Community Blogs
+              p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+          .col-md-6.mt-4
+            .icon-box
+              i.bi.bi-calendar4-week
+              h4
+                a(href="#") Low Cost
+              p Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+    //  End Services Section 
